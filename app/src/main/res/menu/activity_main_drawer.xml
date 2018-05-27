@@ -7,15 +7,15 @@
         <item
             android:id="@+id/nav_agregar"
             android:icon="@drawable/ic_add_box_black_24dp"
-            android:title="Import" />
+            android:title="Agregar" />
         <item
             android:id="@+id/nav_mostrar"
             android:icon="@drawable/ic_assignment_black_24dp"
-            android:title="Gallery" />
+            android:title="Mostrar Notas" />
         <item
             android:id="@+id/nav_modificar"
             android:icon="@drawable/ic_create_black_24dp"
-            android:title="Slideshow" />
+            android:title="Modificar" />
     </group>
 
 </menu>
