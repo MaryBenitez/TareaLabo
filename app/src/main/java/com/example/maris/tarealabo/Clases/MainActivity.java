@@ -13,6 +13,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.maris.tarealabo.Fragmentos.AgregarActivity;
+import com.example.maris.tarealabo.Fragmentos.MostrarActivity;
 import com.example.maris.tarealabo.R;
 
 public class MainActivity extends AppCompatActivity
@@ -80,20 +82,23 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+
+        android.support.v4.app.Fragment myFragment = null;
+        boolean fragmentSelect=false;
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        if (id == R.id.nav_agregar) {
+            myFragment=new AgregarActivity();
+            fragmentSelect=true;
+        } else if (id == R.id.nav_mostrar) {
+            myFragment=new MostrarActivity();
+            fragmentSelect=true;
+        } else if (id == R.id.nav_modificar) {
+            myFragment=new MostrarActivity();
+            fragmentSelect=true;
+        }
+        if(fragmentSelect){
+            getSupportFragmentManager().beginTransaction().replace(R.id.content,myFragment).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
