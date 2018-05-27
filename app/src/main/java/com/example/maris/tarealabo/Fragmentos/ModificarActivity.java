@@ -1,4 +1,4 @@
-package com.example.maris.tarealabo;
+package com.example.maris.tarealabo.Fragmentos;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,16 +8,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.maris.tarealabo.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link AgregarActivity.OnFragmentInteractionListener} interface
+ * {@link ModificarActivity.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link AgregarActivity#newInstance} factory method to
+ * Use the {@link ModificarActivity#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class AgregarActivity extends Fragment {
+public class ModificarActivity extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -29,7 +31,7 @@ public class AgregarActivity extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public AgregarActivity() {
+    public ModificarActivity() {
         // Required empty public constructor
     }
 
@@ -39,11 +41,11 @@ public class AgregarActivity extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment AgregarActivity.
+     * @return A new instance of fragment ModificarActivity.
      */
     // TODO: Rename and change types and number of parameters
-    public static AgregarActivity newInstance(String param1, String param2) {
-        AgregarActivity fragment = new AgregarActivity();
+    public static ModificarActivity newInstance(String param1, String param2) {
+        ModificarActivity fragment = new ModificarActivity();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,7 +66,7 @@ public class AgregarActivity extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_agregar, container, false);
+        return inflater.inflate(R.layout.fragment_modificar, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
