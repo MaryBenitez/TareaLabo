@@ -8,6 +8,6 @@
     tools:context=".Clases.MainActivity"
     tools:showIn="@layout/app_bar_main"
     android:id="@+id/content">
-    
+
 
 </android.support.constraint.ConstraintLayout>
